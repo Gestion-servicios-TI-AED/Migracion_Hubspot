@@ -1,0 +1,6 @@
+.env
+keys.MD
+node_modules/
+data/
+logs/
+*.jsonl

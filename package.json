@@ -1,0 +1,26 @@
+{
+  "name": "migraciion_hubspot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/migrate-units.js",
+  "scripts": {
+    "start": "node server.js",
+    "migrate:test-units": "node scripts/migrate-units.js --limit=2",
+    "migrate:all-units": "node scripts/migrate-units.js",
+    "clean:units": "node scripts/clean-units.js --confirm",
+    "migrate:test-contacts": "node scripts/migrate-contacts.js --limit=2",
+    "migrate:all-contacts": "node scripts/migrate-contacts.js",
+    "clean:contacts": "node scripts/clean-contacts.js --confirm",
+    "migrate:test-deals": "node scripts/migrate-deals.js --limit=2",
+    "migrate:all-deals": "node scripts/migrate-deals.js",
+    "clean:deals": "node scripts/clean-deals.js --confirm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.19.0",
+    "js-yaml": "^4.2.0"
+  }
+}
